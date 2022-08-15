@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
 
 ## Project Overview
 
@@ -48,3 +48,12 @@ source .devops/bin/activate
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+### Repository files
+* `Makefile`: The Makefile includes instructions on environment setup and lint tests
+* `Dockerfile`: A text document that contains all the commands a user could call on the command line to assemble an image
+* `run_docker.sh`: Script file to build an image and run it.
+* `upload_docker.sh`: Script file to upload the created docker image into docker hub.
+* `run_kubernetes.sh`: Script file to run the uploaded image on local kubernetes 
+
+* 

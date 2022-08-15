@@ -1,1 +1,17 @@
-<paste log output from Kubernetes-mediated prediction, here>
+MacBook-Pro-M1:~ ehabrefaat$ ./run_kubernetes.sh 
+pod/module04 created
+NAME       READY   STATUS              RESTARTS   AGE
+module04   0/1     ContainerCreating   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+MacBook-Pro-M1:~ ehabrefaat$ kubectl get pod
+NAME       READY   STATUS    RESTARTS   AGE
+module04   1/1     Running   0          3m
+MacBook-Pro-M1:~ ehabrefaat$ ./run_kuberenets.sh
+-bash: ./run_kuberenets.sh: No such file or directory
+MacBook-Pro-M1:~ ehabrefaat$ ./run_kubernetes.sh 
+Error from server (AlreadyExists): pods "module04" already exists
+NAME       READY   STATUS    RESTARTS   AGE
+module04   1/1     Running   0          5m15s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
